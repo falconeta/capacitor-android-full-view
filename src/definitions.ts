@@ -2,9 +2,14 @@ export interface AndroidInsetsPlugin {
   /**
    * Returns top offset of the status bar
    */
-  top(): Promise<TopReturn>;
+  top(): Promise<TopBottomReturn>;
+
+  /**
+   * Returns bottom offset of the status bar
+   */
+  bottom(): Promise<TopBottomReturn>;
 }
 
-export interface TopReturn {
+export interface TopBottomReturn {
   value: number;
 }

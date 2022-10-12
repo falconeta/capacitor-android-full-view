@@ -32,6 +32,7 @@ const { value } = await AndroidInsets.top();
 <docgen-index>
 
 * [`top()`](#top)
+* [`bottom()`](#bottom)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -42,12 +43,25 @@ const { value } = await AndroidInsets.top();
 ### top()
 
 ```typescript
-top() => Promise<TopReturn>
+top() => Promise<TopBottomReturn>
 ```
 
 Returns top offset of the status bar
 
-**Returns:** <code>Promise&lt;<a href="#topreturn">TopReturn</a>&gt;</code>
+**Returns:** <code>Promise&lt;<a href="#topbottomreturn">TopBottomReturn</a>&gt;</code>
+
+--------------------
+
+
+### bottom()
+
+```typescript
+bottom() => Promise<TopBottomReturn>
+```
+
+Returns bottom offset of the status bar
+
+**Returns:** <code>Promise&lt;<a href="#topbottomreturn">TopBottomReturn</a>&gt;</code>
 
 --------------------
 
@@ -55,7 +69,7 @@ Returns top offset of the status bar
 ### Interfaces
 
 
-#### TopReturn
+#### TopBottomReturn
 
 | Prop        | Type                |
 | ----------- | ------------------- |

@@ -25,4 +25,13 @@ public class AndroidInsetsPlugin extends Plugin {
         ret.put("value", statusBarHeight);
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void bottom(PluginCall call) {
+        float navigationBarHeight = implementation.getBottom();
+        JSObject ret = new JSObject();
+
+        ret.put("value", navigationBarHeight);
+        call.resolve(ret);
+    }
 }

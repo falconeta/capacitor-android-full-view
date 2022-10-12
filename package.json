@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-plugin-android-insets",
-  "version": "0.0.2",
-  "description": "Capacitro plugin for retrieving proper top offset of Android status bar",
+  "name": "capacitor-plugin-android-safe-area",
+  "version": "0.0.10",
+  "description": "Capacitor plugin for retrieving proper top offset of Android status bar",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
