@@ -5,9 +5,9 @@ import Capacitor
  * Please read the Capacitor iOS Plugin Development Guide
  * here: https://capacitorjs.com/docs/plugins/ios
  */
-@objc(AndroidInsetsPlugin)
-public class AndroidInsetsPlugin: CAPPlugin {
-    private let implementation = AndroidInsets()
+@objc(AndroidFullView)
+public class AndroidFullView: CAPPlugin {
+    private let implementation = AndroidFullView()
 
     @objc func top(_ call: CAPPluginCall) {
         call.resolve([

@@ -1,4 +1,4 @@
-package com.owlsdepartment.plugin.android.insets;
+package com.falconeta.plugin.android.fullview;
 
 import android.app.Activity;
 import com.getcapacitor.JSObject;
@@ -7,14 +7,14 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "AndroidInsets")
-public class AndroidInsetsPlugin extends Plugin {
+@CapacitorPlugin(name = "AndroidFullView")
+public class AndroidFullView extends Plugin {
 
-    private AndroidInsets implementation;
+    private AndroidFullView implementation;
 
     @Override
     public void load() {
-        this.implementation = new AndroidInsets(getActivity());
+        this.implementation = new AndroidFullView(getActivity());
     }
 
     @PluginMethod
@@ -23,6 +23,15 @@ public class AndroidInsetsPlugin extends Plugin {
         JSObject ret = new JSObject();
 
         ret.put("value", statusBarHeight);
+        call.resolve(ret);
+    }
+
+    @PluginMethod
+    public void bottom(PluginCall call) {
+        float navigationBarHeight = implementation.getBottom();
+        JSObject ret = new JSObject();
+
+        ret.put("value", navigationBarHeight);
         call.resolve(ret);
     }
 }
