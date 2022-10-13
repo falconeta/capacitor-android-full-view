@@ -1,16 +1,15 @@
-# capacitor-plugin-android-insets
+# capacitor-android-full-view
 
 Capacitor plugin for retrieving proper top offset of Android status bar.
 
-This repo is published version with changed name of https://github.com/jorisbertomeu/capacitor-insets-v2, which was based on archived https://github.com/igorcd/capacitor-insets-plugin/. It should work perfectly fine in `Capacitor@4`.
 
 ## Install
 
 ```bash
 # with npm
-npm install --save capacitor-plugin-android-insets
+npm install --save @falconeta/capacitor-android-full-view
 # with yarn
-yarn add capacitor-plugin-android-insets
+yarn add @falconeta/capacitor-android-full-view
 # after any install
 npx cap sync
 ```
@@ -22,9 +21,9 @@ This plugin is required only on Android when using `StatusBar.setOverlaysWebView
 ## Usage
 
 ```ts
-import { AndroidInsets } from 'capacitor-plugin-android-insets'
+import { AndroidFullView } from 'capacitor-android-full-view'
 
-const { value } = await AndroidInsets.top();
+const { value } = await AndroidFullView.top();
 ```
 
 ## API

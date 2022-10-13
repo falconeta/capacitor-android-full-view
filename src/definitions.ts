@@ -1,4 +1,4 @@
-export interface AndroidInsetsPlugin {
+export interface AndroidFullViewPlugin {
   /**
    * Returns top offset of the status bar
    */

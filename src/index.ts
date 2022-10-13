@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { AndroidInsetsPlugin } from './definitions';
+import type { AndroidFullViewPlugin } from './definitions';
 
-const AndroidInsets = registerPlugin<AndroidInsetsPlugin>('AndroidInsets', {
-  web: () => import('./web').then(m => new m.AndroidInsetsWeb()),
+const AndroidFullView = registerPlugin<AndroidFullViewPlugin>('AndroidFullView', {
+  web: () => import('./web').then(m => new m.AndroidFullViewWeb()),
 });
 
 export * from './definitions';
-export { AndroidInsets };
+export { AndroidFullView };

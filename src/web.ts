@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { AndroidInsetsPlugin, TopBottomReturn } from './definitions';
+import type { AndroidFullViewPlugin, TopBottomReturn } from './definitions';
 
-export class AndroidInsetsWeb extends WebPlugin implements AndroidInsetsPlugin {
+export class AndroidFullViewWeb extends WebPlugin implements AndroidFullViewPlugin {
   async top(): Promise<TopBottomReturn> {
     return { value: 0 };
   }
