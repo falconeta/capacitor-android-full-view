@@ -6,7 +6,7 @@ import Capacitor
  * here: https://capacitorjs.com/docs/plugins/ios
  */
 @objc(AndroidFullView)
-public class AndroidFullView: CAPPlugin {
+public class AndroidFullViewPlugin: CAPPlugin {
     private let implementation = AndroidFullView()
 
     @objc func top(_ call: CAPPluginCall) {
