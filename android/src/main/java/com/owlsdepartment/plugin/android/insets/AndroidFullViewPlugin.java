@@ -8,7 +8,7 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
 @CapacitorPlugin(name = "AndroidFullView")
-public class AndroidFullView extends Plugin {
+public class AndroidFullViewPlugin extends Plugin {
 
     private AndroidFullView implementation;
 
