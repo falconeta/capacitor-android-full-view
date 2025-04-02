@@ -28,7 +28,7 @@ public class AndroidFullViewPlugin extends Plugin {
 
     @PluginMethod
     public void bottom(PluginCall call) {
-        float navigationBarHeight = implementation.getBottom();
+        int navigationBarHeight = implementation.getBottom();
         JSObject ret = new JSObject();
 
         ret.put("value", navigationBarHeight);

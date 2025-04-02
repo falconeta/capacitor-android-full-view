@@ -33,7 +33,7 @@ public class AndroidFullView {
         return titleBarHeight / metrics.density;
     }
 
-    public float getBottom() {
+    public int getBottom() {
         DisplayMetrics metrics = this.activity.getResources().getDisplayMetrics();
         int resourceId = this.activity.getResources().getIdentifier("navigation_bar_height", "dimen", "android");
         float navigationBarHeight = 0;
@@ -41,7 +41,6 @@ public class AndroidFullView {
         if (resourceId > 0) {
             navigationBarHeight = this.activity.getResources().getDimensionPixelSize(resourceId);
         }
-
-        return navigationBarHeight / metrics.density;
+        return (int) (navigationBarHeight / metrics.density);
     }
 }
