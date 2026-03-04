@@ -12,13 +12,11 @@ class AndroidFullViewTests: XCTestCase {
         super.tearDown()
     }
 
-    func testEcho() {
-        // This is an example of a functional test case for a plugin.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTop() {
 
         let implementation = AndroidFullView()
-        let value = "Hello, World!"
-        let result = implementation.echo(value)
+        let value = 0
+        let result = implementation.top()
 
         XCTAssertEqual(value, result)
     }
