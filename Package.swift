@@ -6,7 +6,7 @@ let package = Package(
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "Test",
+            name: "AndroidFullView",
             targets: ["AndroidFullViewPlugin"])
     ],
     dependencies: [
